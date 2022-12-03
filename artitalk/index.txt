@@ -1,0 +1,10 @@
+<script src='//wuyingblog.github.io/Artitalk/cloudflare%20worker/browser.js'></script>
+<script src='//wuyingblog.github.io/Artitalk/cloudflare%20worker/md5.js'></script>
+<script src='//wuyingblog.github.io/Artitalk/cloudflare%20worker/showdown.min.js'></script>
+<script src='//wuyingblog.github.io/Artitalk/cloudflare%20worker/main.js'></script>
+<div id="artitalk_main"></div>
+<script>
+new Artitalk({
+    WokerDomain : "https://wyblog1.eu.org"
+})
+</script>
