@@ -19,7 +19,7 @@
     <meta name="referrer" content="never">
     <meta name="description" content="
 一些小碎碎念… 日常生活吐槽等
-原本是用 Artitalk 插件做的说说页面，近期因为 Leancloud 回收域名跟着挂了，无奈之下还是用评论系统来写说说了……
+原本是用 Artitalk 插件做的说说页面，近期因为 Leancloud 回收域名跟着挂了，无奈之下还是用评论系统来写说说了……，现在可以使用说说了
 浏览器进度条往下拉动即可看到碎碎念啦～
 
 
@@ -259,24 +259,17 @@
 <strong>原本是用 Artitalk 插件做的说说页面，近期因为 Leancloud 回收域名跟着挂了，无奈之下还是用评论系统来写说说了……</strong><br>
 <strong>浏览器进度条往下拉动即可看到碎碎念啦～</strong><!-- ... -->
 </li>
-</ul>
-<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-<pre><code>  &lt;link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' /&gt;
-</code></pre>
-  <!-- ... -->
-</head>
-<body>
-  <!-- ... -->
-  <div id="waline"></div>
-  <script>
-        Waline.init({
-      el: '#waline',
-      serverURL: 'https://waline-railway-production.up.railway.app/',
-      comment: true,
-      pageview: true,
- });
-  </script>
-  <body>
+<!-- 引用 artitalk -->
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<!-- 存放说说的容器 -->
+<div id="artitalk_main"></div>
+<script>
+new Artitalk({
+    appId: 'oPfRHBLWiKjiFAQj6HGh93Wc-MdYXbMMI', // Your LeanCloud appId
+    appKey: '7fbMBsoQZA5oP21pzALjgqjG', // Your LeanCloud appKey
+    serverUrl: 'https://artitalk.wyblog1.tk'
+})
+</script>
                 </div>
                 <div class="clear"></div>
               </section>
@@ -327,7 +320,7 @@
   <script>
         Waline.init({
       el: '#waline',
-      serverURL: 'https://waline-railway-production.up.railway.app/',
+      serverURL: 'https://waline.wyblog1.tk/',
       locale: {
       level0: '炼体',
       level1: '炼气',
